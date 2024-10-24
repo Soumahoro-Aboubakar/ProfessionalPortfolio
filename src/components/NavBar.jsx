@@ -1,8 +1,8 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { navItems } from "../constants";
-import {  Mail, WhatsApp } from "@material-ui/icons";
-
+import Mail from '@mui/icons-material/Mail';
+import WhatsApp from '@mui/icons-material/WhatsApp';
 const NavBar = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
 
