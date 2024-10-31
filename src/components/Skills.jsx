@@ -6,7 +6,7 @@ import {
   FaReact,
   FaNodeJs,
 } from "react-icons/fa";
-import { SiExpo, SiTailwindcss, SiReact } from "react-icons/si";
+import { SiExpo, SiTailwindcss, SiReact } from "react-icons/si"; 
 
 const Skills = () => {
   const style = "border-b border-neutral-700/80 mx-auto w-full max-w-xs h-[2px]";
