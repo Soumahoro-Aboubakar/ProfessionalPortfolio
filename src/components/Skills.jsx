@@ -5,7 +5,7 @@ import {
   FaCss3Alt,
   FaReact,
   FaNodeJs,
-} from "react-icons/fa";
+} from "react-icons/fa"; 
 import { SiExpo, SiTailwindcss, SiReact } from "react-icons/si"; 
 
 const Skills = () => {
