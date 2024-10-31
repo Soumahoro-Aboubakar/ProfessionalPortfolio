@@ -9,8 +9,7 @@ import {
 import { SiExpo, SiTailwindcss, SiReact } from "react-icons/si";
 
 const Skills = () => {
-  const style =
-    "border-b border-neutral-700/80 mx-auto w-full max-w-xs h-[2px]";
+  const style = "border-b border-neutral-700/80 mx-auto w-full max-w-xs h-[2px]";
   const textStyle = "text-neutral-500";
   const textTechStyle = "flex items-center space-x-4";
   const colorAndSize = {
@@ -20,10 +19,12 @@ const Skills = () => {
 
   return (
     <div>
-            <h2 className="text-center lg:text-4xl text-4xl mb-4 mt-5" id="skills">Skills</h2>
+      <h2 className="text-center lg:text-4xl text-4xl mb-4 mt-5" id="skills">
+        Skills
+      </h2>
       <div className="w-full flex flex-col lg:flex-row bg-neutral-900 rounded-2xl p-4 justify-center">
         <img
-          className="w-full lg:w-1/2 h-180 lg:h-[700px]  rounded-lg py-5"
+          className="w-full lg:w-1/2 h-180 lg:h-[700px] rounded-lg py-5"
           src="https://github.githubassets.com/assets/illu-code-scanning-fc9dfb212aa3.png?width=772&format=webpll"
           alt="this is a code image"
         />
@@ -42,7 +43,7 @@ const Skills = () => {
               <div>
                 <h4 className="text-lg font-semibold text-white">CSS3</h4>
                 <p className={textStyle}>
-                  3 ans d'expérience en design réactif.
+                  3 years of experience in responsive design.
                 </p>
               </div>
             </div>
@@ -57,7 +58,7 @@ const Skills = () => {
               <div>
                 <h4 className="text-lg font-semibold text-white">React.js</h4>
                 <p className={textStyle}>
-                  3 ans d'expérience en développement web.
+                  3 years of experience in web development.
                 </p>
               </div>
             </div>
@@ -72,7 +73,7 @@ const Skills = () => {
               <div>
                 <h4 className="text-lg font-semibold text-white">Node.js</h4>
                 <p className={textStyle}>
-                  2 ans d'expérience en développement backend.
+                  2 years of experience in backend development.
                 </p>
               </div>
             </div>
@@ -87,7 +88,7 @@ const Skills = () => {
               <div>
                 <h4 className="text-lg font-semibold text-white">Expo</h4>
                 <p className={textStyle}>
-                  2 ans d'expérience en prototypage mobile.
+                  2 years of experience in mobile prototyping.
                 </p>
               </div>
             </div>
@@ -104,7 +105,7 @@ const Skills = () => {
                   Tailwind CSS
                 </h4>
                 <p className={textStyle}>
-                  6 mois d'expérience en design rapide.
+                  6 months of experience in rapid design.
                 </p>
               </div>
             </div>
@@ -121,7 +122,7 @@ const Skills = () => {
                   React Native
                 </h4>
                 <p className={textStyle}>
-                  2 ans d'expérience en développement mobile.
+                  2 years of experience in mobile development.
                 </p>
               </div>
             </div>
