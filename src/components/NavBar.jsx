@@ -1,15 +1,19 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { navItems } from "../constants";
-import Mail from '@mui/icons-material/Mail';
-import WhatsApp from '@mui/icons-material/WhatsApp';
+import Mail from "@mui/icons-material/Mail";
+import WhatsApp from "@mui/icons-material/WhatsApp";
+import { Link } from "react-scroll";
+
 const NavBar = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
 
   const toggleNavbar = () => {
     setMobileDrawerOpen(!mobileDrawerOpen);
   };
-
+  const handleSetActive = () => {
+    setMobileDrawerOpen(false);
+  };
   return (
     <nav className="sticky z-50 top-0 py-2 backdrop-blur-lg border-b lg:mx-4 border-neutral-700/80">
       <div className="relative flex justify-between px-4 mx-3 items-center lg:text-sm flex-shrink-0">
@@ -21,36 +25,45 @@ const NavBar = () => {
             alt="Developer Logo"
             className="h-12 w-12"
           />
-          <span className="font-semibold">VISIONARY.</span>
+          <span className="font-semibold hidden md:block">VISIONARY.</span>
           <div class="flex flex-col space-y-4">
-  <span class="flex items-center space-x-2">
-    <WhatsApp className="w-6 h-6 text-green-500" />
-    <span class="text-sm lg:text-base">+225 0789585242</span>
-  </span>
-</div>
-
+            <span class="flex items-center space-x-2">
+              <WhatsApp className="w-6 h-6 text-green-500" />
+              <span class="text-sm lg:text-base">+225 0789585242</span>
+            </span>
+          </div>
         </div>
 
         <ul className="hidden lg:flex ml-14 space-x-12">
           {navItems.map((item, index) => (
             <li key={index}>
-              <a href={item.href} className="hover:text-orange-500 transition duration-300">
+              <Link
+                smooth={true}
+                duration={1000}
+                to={item.href}
+                offset={-60}
+                className="hover:text-orange-500 transition duration-300 cursor-pointer"
+              >
                 {item.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
 
         <div className="hidden lg:flex space-x-12 items-center">
-          <a href="#contact" className="border rounded-md py-2 px-2 text-md">
+          {/*  <a href="#contact" className="border rounded-md py-2 px-2 text-md">
             Contact
-          </a>
-          <a
-            href="#contact"
-            className="bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md"
+          </a> */}
+          <Link
+            className="py-2 px-3 rounded-md bg-gradient-to-r from-orange-500 to-orange-800 cursor-pointer"
+            smooth={true}
+            duration={1000}
+            to={"contact"}
+            offset={-60}
+            onClick={handleSetActive}
           >
             Hire Me
-          </a>
+          </Link>
         </div>
 
         <div className="lg:hidden md:flex flex-col justify-end">
@@ -64,22 +77,33 @@ const NavBar = () => {
             <ul>
               {navItems.map((item, index) => (
                 <li key={index} className="py-4">
-                  <a href={item.href} className="hover:text-orange-500 transition duration-300">
+                  <Link
+                    smooth={true}
+                    duration={1000}
+                    to={item.href}
+                    offset={-60}
+                    className="hover:text-orange-500 transition duration-300 cursor-pointer"
+                    onClick={handleSetActive}
+                  >
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
             <div className="flex space-x-6">
-              <a href="#contact" className="py-2 px-3 border rounded-md">
+              {/*   <a href="#contact" className="py-2 px-3 border rounded-md">
                 Contact
-              </a>
-              <a
-                href="#services"
-                className="py-2 px-3 rounded-md bg-gradient-to-r from-orange-500 to-orange-800"
+              </a> */}
+              <Link
+                className="py-2 px-3 rounded-md bg-gradient-to-r from-orange-500 to-orange-800 cursor-pointer"
+                smooth={true}
+                duration={1000}
+                to={"contact"}
+                offset={-60}
+                onClick={handleSetActive}
               >
                 Hire Me
-              </a>
+              </Link>
             </div>
           </div>
         )}

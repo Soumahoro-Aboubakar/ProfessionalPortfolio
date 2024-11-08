@@ -1,0 +1,24 @@
+.scroll-indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: bounce 1.5s ease-in-out infinite;
+  }
+  
+  .scroll-icon {
+    font-size: 30px;
+    color: #ffffff;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  

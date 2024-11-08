@@ -5,15 +5,17 @@ import Skills from './components/Skills';
 import Videos from './components/Videos';
 import Prices from './components/Services'
 import Contact from './components/Contact';
+import { Project } from './components/Projects';
 function App() {
   return (
     <>
     <NavBar />
     <div className='max-w-7xl mx-auto pt-10 px-6 lg:my-6 my-1 '>
        <Header />
-       <Videos />
+       <Videos />  
        <Skills  />
        <Prices />
+       <Project />
        <AboutMe />
        <Contact />
     </div>

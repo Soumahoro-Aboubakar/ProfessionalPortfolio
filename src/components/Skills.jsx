@@ -26,7 +26,7 @@ const Skills = () => {
         <img
           className="w-full lg:w-1/2 h-180 lg:h-[700px] rounded-lg py-5"
           src="https://github.githubassets.com/assets/illu-code-scanning-fc9dfb212aa3.png?width=772&format=webpll"
-          alt="this is a code image"
+          alt="user-image"
         />
 
         <div className="lg:w-1/2 mt-8 lg:mt-0 lg:ml-8 flex flex-col justify-center">
