@@ -1,11 +1,24 @@
 import React from "react";
 import "../css/projects.css";
+import rimcovAppImage from "../assets/image_background.PNG";
+import olympicRing from "../assets/olympics_ring.PNG";
+
 const projects = [
+  {
+    title: "Rimcov",
+    link: "https://rimcov.onrender.com",
+    image: rimcovAppImage,
+  },
+  {
+    title: "Olympic Medal",
+    link: "https://grafikart.github.io/olympics-medals/",
+    image: olympicRing,
+  },
 ];
 
 export function Project(props) {
-   // const navigate = useNavigation()
-    if(!(projects.length>0)) return "";
+  // const navigate = useNavigation()
+  if (!(projects.length > 0)) return "";
   return (
     <div id="projects">
       <div className="container">
@@ -30,7 +43,7 @@ export function Project(props) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={project.link} alt="" rel="noopener noreferrer" />
+                <img src={project.image} alt="" rel="noopener noreferrer" />
                 <div className="project-content">
                   <h3>{project.title}</h3>
                 </div>
